@@ -1,0 +1,44 @@
+.date-filter {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.date-filter-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: var(--text-primary);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: 'IBM Plex Mono', monospace;
+  transition: all 0.2s;
+}
+
+.date-filter-btn:hover {
+  background: var(--surface-elevated);
+}
+
+.date-filter-btn-active {
+  background: var(--gradient-primary);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.date-filter-btn-active:hover {
+  background: var(--gradient-primary);
+}
+
+@media (max-width: 768px) {
+  .date-filter {
+    width: 100%;
+  }
+  
+  .date-filter-btn {
+    flex: 1 1 auto;
+    min-width: 100px;
+  }
+}
